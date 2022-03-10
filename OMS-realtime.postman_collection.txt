@@ -1,0 +1,57 @@
+{
+	"info": {
+		"_postman_id": "6bswnd4idn5-gshr-1234-1234-123456bsjjidw",
+		"name": "App-testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": " https://Application.com:123/abcde/restapi/executeFlow/APIActivity",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "Username_App",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><Promise xmlns:ns3=\"http://www.abcd.com/activityservice/applicationname\" xmlns:tib=\"http://www.tibco.com/bw/xslt/custom-functions\" CheckInventory=\"A\" OrganizationCode=\"ABCDE\"><EvaluateOptions><EvaluateOption OptionNo=\"9\" DeliveryMethod=\"ABCD\" Node=\"1239\" /></EvaluateOptions><PromiseLines><PromiseLine LineId=\"9\" UnitOfMeasure=\"ABCD\" RequiredQty=\"12345.0\" ItemID=\"1234567\" /></PromiseLines></Promise>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://Application.com:123/abcde/restapi/executeFlow/APIActivity",
+					"protocol": "https",
+					"host": [
+						"HOSTNAME",
+						"APPNAME",
+						"COM"
+					],
+					"port": "123",
+					"path": [
+						"abcde",
+						"restapi",
+						"executeFlow",
+						"APIActivity"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
